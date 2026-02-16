@@ -1,4 +1,12 @@
-Traditional digital steganography, while effective at concealing data within media, typically oper-ates on pre-recorded files, rendering it unsuitable for modern, real-time communication demands. This paper addresses the critical need for undetectable, live message exchange by proposing and evaluating a minimal Real-Time Dynamic Audio Steganography Framework.
-The core innovation lies in establishing a highly synchronized, low-latency covert channel within a live audio stream transmitted over a TCP/IP network, surpassing the limitations of static, offline methods. The system utilizes a lightweight, modular architecture consisting of a Transmitter and a Receiver. The Transmitter captures live 44.1 kHz PCM audio, segments it into small 1024-sample frames, and employs a Pseudo-Random Number Generator (PRNG) with a shared key to determinis-tically select sample indices for Least Significant Bit (LSB) embedding.
-This synchronized PRNG indexing ensures perfect alignment between sender and receiver without explicit signaling, maximizing stealth and minimizing delay. The framework’s design also targets future integration of AES encryption for confidentiality and psychoacoustic adaptive embedding to further optimize capacity and imperceptibility based on local frame energy.
+Traditional digital steganography, while effective at concealing data within media, typically oper-ates on pre-recorded files,
+rendering it unsuitable for modern, real-time communication demands. This paper addresses the critical need for undetectable, 
+live message exchange by proposing and evaluating a minimal Real-Time Dynamic Audio Steganography Framework.
+The core innovation lies in establishing a highly synchronized, low-latency covert channel within a live audio stream transmitted 
+over a TCP/IP network, surpassing the limitations of static, offline methods. The system utilizes a lightweight, modular architecture
+consisting of a Transmitter and a Receiver. The Transmitter captures live 44.1 kHz PCM audio, segments it into small 1024-sample frames,
+and employs a Pseudo-Random Number Generator (PRNG) with a shared key to determinis-tically select sample indices for Least Significant 
+Bit (LSB) embedding.
+This synchronized PRNG indexing ensures perfect alignment between sender and receiver without explicit signaling, maximizing stealth
+and minimizing delay. The framework’s design also targets future integration of AES encryption for confidentiality and psychoacoustic 
+adaptive embedding to further optimize capacity and imperceptibility based on local frame energy.
 
