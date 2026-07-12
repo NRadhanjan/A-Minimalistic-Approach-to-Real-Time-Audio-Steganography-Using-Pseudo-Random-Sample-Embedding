@@ -255,7 +255,3 @@ Planned enhancements to the framework include:
 - Exploring deep learning and generative adversarial network (GAN) based embedding strategies for further gains in imperceptibility and capacity
 
 ---
-
-## 15. License
-
-No license has been specified for this repository. Add a LICENSE file (for example, MIT or Apache 2.0) if you intend for others to reuse, modify, or redistribute this work.
