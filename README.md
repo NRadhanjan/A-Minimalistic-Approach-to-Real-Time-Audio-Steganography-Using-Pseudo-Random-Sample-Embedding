@@ -7,15 +7,6 @@ Traditional digital steganography operates almost exclusively on pre-recorded, s
 
 The system consists of a Transmitter and a Receiver. The Transmitter captures live 44.1 kHz PCM audio, segments it into 1024-sample frames, and uses a Pseudo-Random Number Generator (PRNG) seeded with a shared key to deterministically select sample indices for Least Significant Bit (LSB) embedding. This PRNG-based indexing keeps the sender and receiver perfectly aligned without any explicit signaling, which maximizes stealth and minimizes delay.
 
-Experimental evaluation of the prototype confirmed its feasibility and performance:
-
-- Average end-to-end latency of approximately 10.87 milliseconds
-- Maximum theoretical embedding capacity of 1378.12 bits per second
-- Average Signal-to-Noise Ratio (SNR) of 103.33 dB, indicating negligible acoustic distortion
-- Bit Error Rate (BER) of 0.000 percent, confirming complete message integrity
-
-These results demonstrate that dynamic, PRNG-synchronized LSB embedding can support practical, high-fidelity covert communication in live audio streams, and they establish a foundation for future work on adaptive masking and stronger cryptographic protection.
-
 ---
 
 ## Table of Contents
