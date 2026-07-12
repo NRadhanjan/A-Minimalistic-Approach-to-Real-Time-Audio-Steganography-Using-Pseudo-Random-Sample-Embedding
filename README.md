@@ -1,5 +1,4 @@
 # A Minimalistic Approach to Real-Time Audio Steganography Using Pseudo-Random Sample Embedding
-
 ---
 
 ## Abstract
