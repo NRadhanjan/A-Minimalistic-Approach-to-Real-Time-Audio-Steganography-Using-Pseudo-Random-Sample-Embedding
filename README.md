@@ -73,9 +73,9 @@ The framework implements a full-duplex real-time audio steganography pipeline ac
 
 ```
                               TCP/IP Socket Stream
-   ------------------------                              ------------------------
-   |      TRANSMITTER      |  ----- stego-audio ------->  |       RECEIVER        |
-   |                        |         frames               |                        |
+    ------------------------                                 ------------------------
+   |      TRANSMITTER       |  ----- stego-audio ------->   |       RECEIVER         |
+   |                        |         frames                |                        |
    |  Audio Capture         |                               |  Network Reception     |
    |  (PyAudio, 44.1 kHz,   |                               |                        |
    |   16-bit PCM, 1024-    |                               |  Dynamic Extraction    |
@@ -88,7 +88,7 @@ The framework implements a full-duplex real-time audio steganography pipeline ac
    |   energy-adaptive)     |                               |  Reconstruction        |
    |                        |                               |                        |
    |  Network Transmission  |                               |  Audio Playback        |
-   ------------------------                              ------------------------
+   ------------------------                                  ------------------------
 ```
 
 The four core modules present on both ends are: Audio Capture, Encryption, Dynamic Embedding/Extraction, and Network Transmission/Reception. Each is optimized for low-latency, frame-by-frame operation rather than batch processing.
